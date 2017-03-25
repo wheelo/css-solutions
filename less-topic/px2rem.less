@@ -1,0 +1,67 @@
+@rate: 20;
+@base: 1rem;
+
+
+.height (@h:0) {
+    height: ((@h / @rate) * @base);
+}
+.min-height() {
+    min-height: ((@h / @rate) * @base);
+}
+.max-height() {
+    max-height: ((@h / @rate) * @base);
+}
+.width (@w:0) {
+    width: ((@w / @rate) * @base);
+}
+.min-width (@w:0) {
+    min-width: ((@w / @rate) * @base);
+}
+.max-width (@w:0) {
+    max-width: ((@w / @rate) * @base);
+}
+.left (@s) {
+    left: ((@s / @rate) * @base);
+}
+.right (@s) {
+    right: ((@s / @rate) * @base);
+}
+.top (@s) {
+    top: ((@s / @rate) * @base);
+}
+.bottom (@s) {
+    bottom: ((@s / @rate) * @base);
+}
+
+.margin (@t:0, @r:0, @b:0, @l:0) {
+    margin-top: ((@t / @rate) * @base);
+    margin-right: ((@r / @rate) * @base);
+    margin-bottom: ((@b / @rate) * @base);
+    margin-left: ((@l / @rate) * @base);
+}
+.margin-top (@t:0) {
+    margin-top: ((@t / @rate) * @base);
+}
+
+// todo
+
+.padding (@t:0, @r:0, @b:0, @l:0) {
+    padding-top: ((@t / @rate) * @base);
+    padding-right: ((@r / @rate) * @base);
+    padding-bottom: ((@b / @rate) * @base);
+    padding-left: ((@l / @rate) * @base);
+}
+
+.line-height (@h:0) {
+    line-height: ((@h / @rate) * @base);
+}
+.font-size (@fs:0) {
+    // font-size: (@fs * 1px);
+    font-size: ((@fs / @rate) * @base);
+}
+.border-radius(@b:0){
+    border-radius:((@b / @rate) * @base);
+}
+.background-size(@b:0){
+    background-size:((@b / @rate) * @base);
+}
